@@ -250,13 +250,36 @@ a{
    
 
  }
- 
- .cursos
- .cursos-principal
- .curso{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+ .encabezado-curso{
+    grid-area: encabezado-curso;
  }
+ .titulo-curso{
+    grid-area: titulo-curso;
+    
+ }
+ .img-curso{
+    grid-area: img-curso;
+ }
+ .descripcion-curso{
+    grid-area: descripcion-curso;
+    background-color: rgb(199, 176, 230);
+    
+ }
+ 
+ .contenedor-curso >*{
+    display: grid;
+    grid-template-columns: 5fr 8fr 1fr;
+    grid-template-rows: 2fr 2fr;
+    grid-template-areas:
+    "encabezado-curso encabezado-curso"
+    "titulo-curso titulo-curso"
+    "img-curso descripcion-curso" ;
+    padding-right: 20px;
+    padding-left: 10px;
+    
+    
+ }
+
 
  
 
