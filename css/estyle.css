@@ -129,7 +129,7 @@ a{
             justify-content:center;
             font-size: 25px;
             text-transform: uppercase;
-            padding: 0 0 10px 0;
+            padding: 0 0 10px 0px;
             padding-top: 10px;
             color:rgba(236, 231, 248, 0.884);
             box-shadow: 0 0 20px 0 rgba(255, 255, 255, .3); 
@@ -170,54 +170,9 @@ a{
             
                 
             }
-       
-       
-        
-    .aside{
-        background-color:rgba(226, 212, 212, 0.842);
-        flex:1 1 30%;
-        border-left:solid 2px rgba(8, 4, 4, 0.336);
-        border-bottom: solid 2px rgba(8, 4, 4, 0.336);
-        
-
-    } 
-    .aside img{
-        width: 100%;
-    }
-        .publicidad{
-            background-color: rgba(129, 26, 86, 0.801);
-            border-bottom: solid 2px rgba(197, 144, 188, 0.829);
-            padding-left: 10px;
-            padding-right: 10px;
-            border: 5px outset rgba(10,6,52,0.75);
-
-           
-            position: relative;
-            animation: myfirst 4s linear 2s infinite alternate;
-          }
-          
-          @keyframes myfirst {
-            0%   {background-color:rgb(141, 6, 96); left:0px; top:0px;}
-            25%  {background-color:rgb(132, 0, 255); left:0px; top:0px;}
-            50%  {background-color:rgb(93, 11, 201); left:0px; top:0px;}
-            75%  {background-color:rgba(49, 0, 128, 0.918); left:0px; top:0px;}
-            100% {background-color:rgb(32, 6, 80); left:0px; top:0px;}
-          }
-        
-        .aside h3{
-                text-align: center;
-                color:rgba(192, 204, 19, 0.623);
-                padding-top: 10px;
-                padding-bottom: 10px;
-                text-shadow: -1px -1px 1px rgba(255,255,255,.1), 1px 1px 1px rgba(0,0,0,.5);
-
-            
+            .article p{
+                padding-left: 45px;}
                 
-        }
-        .aside p{
-            text-align: center;
-            padding-top: 5px;
-        }
 
 
    .footer{
@@ -268,6 +223,83 @@ a{
    
 
  }
+
+ .article h2{
+    grid-area: header;
+    text-align: center;
+    align-items: center;
+    padding-left: 40px;
+   
+ }
+ .article img{
+    grid-area: img-izq;
+    width: 110%;
+    height: 80%;
+    padding-left: 5px;
+    
+ }
+ .article p{
+    grid-area: p-der;
+    
+ }
+
+ .articulos >*{
+    display: grid;
+    grid-template-columns: 10fr 25fr 1fr;
+    grid-template-rows: 1fr 15fr 1fr;
+    grid-template-areas:
+    "header header header"
+    "img-izq p-der p-der";
+ }
+ .aside{
+    background-color:rgba(226, 212, 212, 0.842);
+    flex:1 1 60%;
+    border-left:solid 2px rgba(8, 4, 4, 0.336);
+    border-bottom: solid 2px rgba(8, 4, 4, 0.336);
+    
+
+} 
+
+    .publicidad{
+        background-color: rgba(129, 26, 86, 0.801);
+        border-bottom: solid 2px rgba(197, 144, 188, 0.829);
+        padding-left: 10px;
+        padding-right: 10px;
+        border: 5px outset rgba(10,6,52,0.75);
+
+       
+        position: relative;
+        animation: myfirst 4s linear 2s infinite alternate;
+      }
+      
+      @keyframes myfirst {
+        0%   {background-color:rgb(141, 6, 96); left:0px; top:0px;}
+        25%  {background-color:rgb(132, 0, 255); left:0px; top:0px;}
+        50%  {background-color:rgb(93, 11, 201); left:0px; top:0px;}
+        75%  {background-color:rgba(49, 0, 128, 0.918); left:0px; top:0px;}
+        100% {background-color:rgb(32, 6, 80); left:0px; top:0px;}
+      }
+    
+    .aside h3{
+            text-align: center;
+            color:rgba(192, 204, 19, 0.623);
+            padding-top: 10px;
+            padding-bottom: 10px;
+            text-shadow: -1px -1px 1px rgba(255,255,255,.1), 1px 1px 1px rgba(0,0,0,.5);
+            transition:all 1s;
+
+        
+            
+    }
+
+    .aside h3:hover{
+        font-size: 20px;
+
+    }
+    .aside p{
+        text-align: center;
+        padding-top: 5px;
+    }
  .encabezado-curso{
     grid-area: encabezado-curso;
     
@@ -287,7 +319,7 @@ a{
  
  .contenedor-curso >*{
     display: grid;
-    grid-template-columns: 5fr 8fr 1fr;
+    grid-template-columns: 4fr 8fr;
     grid-template-rows: 2fr 2fr;
     grid-template-areas:
     "encabezado-curso encabezado-curso"
