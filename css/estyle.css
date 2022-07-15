@@ -12,7 +12,7 @@
 }
 body{
 
-    background-color:rgba(255, 255, 246, 0.781) ;
+    background-color:rgba(116, 115, 124, 0.747) ;
     
     font-family:'Times New Roman', Times, serif;
    
@@ -47,6 +47,18 @@ a{
 
     
 }
+.img-nat{
+    border-radius:15px;
+    
+  
+}
+.img-aside{
+    padding-top: 15px;
+    border-radius:50% ;
+}
+.img-flores{
+    padding-bottom: 15px;
+}
 
 .titulo-span{
    text-align: center;
@@ -70,6 +82,10 @@ p{
     text-align:justify center;
     
 }
+.publicidad *>{
+    text-align: center;
+}
+
 
 .modalidad{
     font-size: 15px;
@@ -99,14 +115,18 @@ img{
     border:unset blue;
 }
 
-
+header{
+    background:url(../img/galaxia.jpg);
+    background-size: cover;
+    background-attachment:fixed;
+}
 
  .navbar{
     background:url(../img/galaxia.jpg);
    
     
     background-size: cover;
-    background-attachment: none;
+    background-attachment:fixed;
     font-family:"BerkshireSwash-Regular.ttf";
     
  
@@ -121,7 +141,8 @@ img{
                 color:#fff;
                 font-size: 15px;
                 text-transform: uppercase;
-                padding: 0 10px;
+                
+                padding-right: 10px;
                 letter-spacing: 2px;
                 text-align: inline;
                 text-shadow: 0 0 15px rgba(255,255,255,.5), 0 0 10px rgba(255,255,255,.5);
@@ -156,11 +177,18 @@ img{
             font-size: 65px;
             font-weight: 300px;
             line-height: 1.6;
-            padding:10px;
-            padding-right: 130px;
+            padding-right: 15px;
+           
+          
+           
+        
             text-shadow: 0 0 15px rgba(255,255,255,.5), 0 0 10px rgba(255,255,255,.5);
             
             
+         }
+         div.titulo-principal{
+            justify-content: center;
+            align-items: center;
          }
 
    .seccion{
@@ -373,12 +401,27 @@ img{
  .titulo-curso{
     text-align: center;
     align-items: center;
-    padding-top:5px 0 5px 0;
+    padding-left: 10px;
+    padding-right: 15px;
     text-shadow: 2px 8px 6px rgba(0,0,0,0.2), 0px -5px 35px
      rgba(255,255,255,0.3), -35px 6px 4px rgba(106,24,138,0);
     color: #E3E6FB;
     background: #6A13CF;
 
+  }
+  .descripcion-c-f{
+    text-align: center;
+    padding-left: 10px;
+    
+  }
+  .d-modalidad{
+    padding-left: 10px;
+  }
+  .modalidad{
+    text-align: justify;
+  }
+  .imagenes-modalidad{
+    justify-content: center;
   }
  
  .temario{
