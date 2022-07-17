@@ -37,7 +37,9 @@ a{
     color:rgba(146, 146, 129, 0.918);
     font-size: 15px;
 }
-    
+.centrar-titulo{
+    text-align: center;   
+}    
 .contenedor{
     text-align: center;
     background-color:rgba(68, 68, 68, 0.473) ;
@@ -118,17 +120,21 @@ img{
  #carouselExampleIndicators
 img{
     opacity: 0.9;
-    border:unset blue;
+    border-radius: 25px;
 }
 .descripcion-c-f{
+    padding-top: 5px;
     font-weight: bold;
 }
 .descripcion-c-f{
-    text-align: center;
+    text-align:justify;
     padding-left: 10px;
+    color: #070306;
 }
 .d-modalidad{
+    padding-top: 10px;
     padding-left: 10px;
+    border-style:outset;   
 }
 .formulario{
 color: rgb(123, 13, 156);
@@ -139,8 +145,8 @@ background-color:rgba(194, 185, 185, 0.753) ;
     background-size: cover;
     display: flex;
     justify-content: center;
-    margin-top: 10x;
-    padding-top: 15px;
+    margin-top:1px;
+    padding-top:15px;
     border-top:solid 2px rgba(90, 62, 88, 0.678);
     font-family:"BerkshireSwash-Regular.ttf";
 } 
@@ -180,19 +186,53 @@ header{
     background-size: cover;
     background-attachment:fixed;
 }
-.imagenes-modalidad{
-    justify-content: center;
+.ir-f-c
+p{
+    color:rgb(168, 152, 168);
+    border-style:solid;
+    align-items: center;
+    text-shadow: 2px 8px 6px rgba(0,0,0,0.2), 0px -5px 35px
+    rgba(255,255,255,0.3), -35px 6px 4px rgba(106,24,138,0);
+   color: #E3E6FB;
+   background: #833d7d8a;
+}
+.ir-f-c
+p:hover{
+    color:white;
+    opacity: 0.4;
+   
+    
 }
 .img-nat{
     border-radius:15px;
+    border-style:double;
+    opacity:0.9;
+    padding-bottom:1px;
 }
 .img-aside{
     padding-top: 15px;
-    border-radius:50% ;
+    padding-bottom: 10px;
+    border-radius:50%;
 }
 .img-flores{
+    
     padding-bottom: 15px;
 } 
+.img-zoom{
+    padding-top: 60px;
+    padding-left: 100px;
+    padding-right: 30px;
+    padding-bottom:20px;
+}
+.img-class{
+    padding-top: 60px;
+    padding-bottom: 20px;
+}
+.img-c-f{
+    border-bottom: 10px;
+    border-radius:5%;
+    border-style:ridge;
+}
 .log{
     text-align: center;
     font-size: 3em;
@@ -200,12 +240,12 @@ header{
     text-shadow: 0 0 15px rgba(255,255,255,.5), 0 0 10px rgba(255,255,255,.5);
 } 
 li p{
-    color: rgb(49, 30, 156);
+    color: rgba(82, 23, 97, 0.788);
 } 
 .modalidad{
     font-size: 15px;
-    text-align: justify;
-    letter-spacing: 1px;
+    text-align:justify;
+    
 }
 .navbar{
     background:url(../img/galaxia.jpg);
@@ -220,7 +260,7 @@ li p{
     font-size: 15px;
     text-transform: uppercase;            
     padding-right: 10px;
-    letter-spacing: 2px;
+    letter-spacing: 3px;
     text-align: inline;
     text-shadow: 0 0 15px rgba(255,255,255,.5), 0 0 10px rgba(255,255,255,.5);
 }
@@ -230,9 +270,10 @@ li p{
     color:rgba(249, 253, 0, 0.918);
 }
 p{
-    color: rgba(5, 5, 2, 0.808);
-    font-size: 20px;
+    color: rgb(5, 5, 2);
+    font-size: 18px;
     text-align:justify center;
+    font-weight: bold;
 }
 .publicidad *>{
     text-align: center;
@@ -264,6 +305,12 @@ p{
 @keyframes myfirst {
     50%   {background-color:rgba(8, 3, 7, 0.952); left:0px; top:0px;}
     100%  {background-color:rgba(55, 4, 61, 0.692); left:0px; top:0px;}
+}
+.centrar-titulo
+p{
+    padding-top: 10px;
+    color: #3a0844;
+    font-weight: bolder;
 }
 .titulo-curso{
     text-align: center;
