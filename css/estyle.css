@@ -8,8 +8,8 @@
     box-sizing: border-box;
 }
 body{
-    background-color:rgba(116, 115, 124, 0.747) ;
-    font-family:'Times New Roman', Times, serif;
+    background-color:rgb(255, 255, 255) ;
+    font-family:'serif''verdana';
 }
 a{
     text-decoration: none;
@@ -29,13 +29,13 @@ a{
     transition:all 1s;
 }
 .aside h3:hover{
-    font-size: 20px;
+    font-size:20px;
 }
 .aside p{
     text-align: center;
     padding-top: 5px;
-    color:rgba(146, 146, 129, 0.918);
-    font-size: 15px;
+    color:rgba(175, 175, 19, 0.918);
+    font-size: 12px;
 }
 .centrar-titulo{
     text-align: center;   
@@ -150,28 +150,19 @@ background-color:rgba(194, 185, 185, 0.753) ;
     border-top:solid 2px rgba(90, 62, 88, 0.678);
     font-family:"BerkshireSwash-Regular.ttf";
 } 
-h2{
-    display: flex;
-    justify-content:center;
-    font-size: 25px;
-    text-transform: uppercase;
-    padding: 0 0 10px 0px;
-    padding-top: 10px;
-    letter-spacing: 1px;
-    color:rgba(236, 231, 248, 0.884);
-    box-shadow: 0 0 20px 0 rgba(255, 255, 255, .3); 
-    text-align: center;
-    text-shadow: 3px 2px 3px rgba(255,255,255,.2);
-    background-image:linear-gradient(to right,rgba(15, 11, 15, 0.027),rgba(41, 15, 41, 0.767),black);
-    background-size: cover;
-    border-top:solid 2px rgba(90, 62, 88, 0.678);
-    background-image:linear-gradient(to right,rgba(15, 11, 15, 0.027),rgba(41, 15, 41, 0.767),black);
+.titulo-2{
+    color:#3a0844;
+    font-weight: bold;
+    padding-bottom: 10px;
+
+    
+    
 }
 h3{
     text-align: center;
     align-items: center;
     padding-bottom: 10px;
-    font-size: 25px;
+    font-size: 18px;
     padding-top: 15px;
     color:rgba(236, 231, 248, 0.884);
     text-shadow: 0 0 15px rgba(255,255,255,.5), 0 0 10px rgba(255,255,255,.5);
@@ -184,21 +175,17 @@ h4{
 header{
     background:url(../img/galaxia.jpg);
     background-size: cover;
-    background-attachment:fixed;
+    background-attachment:none;
+    border:bottom 1px rgb(59, 8, 126);
 }
-.ir-f-c
+.ir-formaciones-cursos
 p{
     color:rgb(168, 152, 168);
-    border-style:solid;
-    align-items: center;
-    text-shadow: 2px 8px 6px rgba(0,0,0,0.2), 0px -5px 35px
-    rgba(255,255,255,0.3), -35px 6px 4px rgba(106,24,138,0);
-   color: #E3E6FB;
-   background: #833d7d8a;
+    
 }
-.ir-f-c
+.ir-formaciones-cursos
 p:hover{
-    color:white;
+    color:rgb(221, 218, 41);
     opacity: 0.4;
    
     
@@ -248,9 +235,7 @@ li p{
     
 }
 .navbar{
-    background:url(../img/galaxia.jpg);
-    background-size: cover;
-    background-attachment:fixed;
+    background-image:linear-gradient(to left,hsla(300, 16%, 84%, 0.973),#850a85fd,hsla(300, 16%, 84%, 0.973));
     font-family:"BerkshireSwash-Regular.ttf";
 }
 .navbar-nav
@@ -259,7 +244,6 @@ li p{
     color:#fff;
     font-size: 15px;
     text-transform: uppercase;            
-    padding-right: 10px;
     letter-spacing: 3px;
     text-align: inline;
     text-shadow: 0 0 15px rgba(255,255,255,.5), 0 0 10px rgba(255,255,255,.5);
@@ -271,12 +255,13 @@ li p{
 }
 p{
     color: rgb(5, 5, 2);
-    font-size: 18px;
+    font-size: 20px;
     text-align:justify center;
     font-weight: bold;
 }
 .publicidad *>{
     text-align: center;
+    
 } 
 .pie{    
     text-align: center;
@@ -300,11 +285,11 @@ p{
     padding-right: 10px;
     border: 5px outset rgba(44, 12, 70, 0.75);   
     position: relative;
-    animation: myfirst 2s linear 4s infinite alternate;
+    animation: myfirst 4s linear 2s infinite alternate;
 }  
 @keyframes myfirst {
     50%   {background-color:rgba(8, 3, 7, 0.952); left:0px; top:0px;}
-    100%  {background-color:rgba(55, 4, 61, 0.692); left:0px; top:0px;}
+    100%  {background-color:rgba(17, 1, 19, 0.788); left:0px; top:0px;}
 }
 .centrar-titulo
 p{
@@ -322,20 +307,40 @@ p{
     color: #E3E6FB;
     background: #6A13CF;
 }
-.titulo-principal
-h1{
+
+.principio{
    color: rgba(251, 252, 244, 0.966);
    text-align:center;
-   font-size: 65px;
+   font-size: 15px;
    font-weight: 300px;
    line-height: 1.6;
-   padding-right: 15px;
+   font-family:"BerkshireSwash-Regular.ttf";
    text-shadow: 0 0 15px rgba(255,255,255,.5), 0 0 10px rgba(255,255,255,.5);
+}
+.principio
+.titulo-principal{
+    font-size: 60px;
+}
+.principio
+img{
+    border-radius: 40%;
+
 }
 .social{
     background-color: brown;
     flex: 1 1 auto;
 }
+.card
+img{
+
+   border-top-style:groove;
+   border-right-style:groove;
+   
+}
+.card-body{
+    background-color: #9e8faf;
+}
+
 
 @media (min-width:800px){
             
