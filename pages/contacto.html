@@ -12,91 +12,112 @@
     <link rel="stylesheet" href="../css/estyle.css"/>
 </head>
 <body>
-  <a name="principio"></a>
   <header>
-    <header>
-      <div class="principio">
-      <a class="navbar-brand d-flex justify-content-center" href="../index.html"><img src="../img/logoHalo.png" alt="" width="210px" height="auto"></a>
-      <h1 class="titulo-principal d-flex justify-content-center ">Halo Boreal</h1></div>
-      <div class="menu-navegacion">
+    <!--Menú Navegación-->
+    <div class="principio">
+      <a class="navbar-brand d-flex justify-content-center" href="../index.html">
+        <img src="../img/logoHalo.png" alt="Logo halo" width="215px" height="auto">
+      </a>
+      <h1 class="titulo-principal d-flex justify-content-center ">Halo Boreal</h1>
+    </div>
+    <div class="menu-navegacion">
       <nav class="navbar navbar-expand-md navbar-dark bg-light">
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <button class="navbar-toggler" type="button" data-toggle="collapse"
+        data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" 
+        aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <div class="navegacion m-auto">
-        <ul class="navbar-nav mr-auto active text-center">
-          <li class="nav-item ">
-            <a class="nav-link" href="../index.html">Inicio</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="../pages/acercade.html">Acerca De</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="../pages/cursos.html">Cursos</a>
-          </li>
-          <li class="nav-item">
-              <a class="nav-link" href="../pages/formaciones.html">Formaciones</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="../pages/contacto.html">Contacto</a>
-            </li>
-        </ul>
-          </div>
-      </div>
-      </nav>
-      </div>
-  </header>
-    <div class="contenedor">
-      <h1 class="log">Contactanos</h1>
-      <div class="contact-wrapper">
-        <div class="contact-form">
-          <form action="">
-            <p>
-              <label for="nombre">Nombre</label>
-              <input type="text" name="nombre" id="nombre" required placeholder="Escribe tu nombre">
-            </p>   
-            <p>
-              <label for="apellido">Apellido</label>
-              <input type="apellido" name="apellido" id="apellido" required placeholder="Escribe tu apellido"> 
-            </p>
-            <p>
-              <label for="email">Correo Electrónico</label>
-              <input type="email" name="email"id="email" required placeholder="Ingresa tu correo">
-            </p>
-            <p>
-              <label for="cel">Teléfono</label>
-              <input type="cel" name="cel" id="cel" placeholder="+56987654321">
-            </p>
-            <p class="block">
-              <label>Mensaje</label>
-              <textarea name="Mensaje" row="50" cols="150" placeholder="Escribe tu mensaje aqui"></textarea>
-            </p>
-            <p class="block">
-              <button type="submit">Enviar</button>
-            </p>
-          </form>
-        </div>
-        <div class="contact-info">
-          <h4>¿Necesitas mas información?</h4>
-          <ul>
-            <li>No dudes en escribirnos</li>
-            <li><p>Sigue nuestras redes sociales<br>
-              y enterate de nuestros nuevos cursos</li>
-              <img src="../img/logoHalo.png" alt="logo halo" width="40%" height="auto">
+            <ul class="navbar-nav mr-auto active text-center">
+              <li class="nav-item ">
+                <a class="nav-link" href="../index.html">Inicio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="../pages/acercade.html">Acerca De</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="../pages/cursos.html">Cursos</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="../pages/formaciones.html">Formaciones</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="../pages/contacto.html">Contacto</a>
+              </li>
             </ul>
-            <p>Halo Boreal &copy;</p>
+          </div>
+        </div>
+      </nav>
+    </div>
+  </header>
+  <div class="container-fluid"  style=" background-image:linear-gradient(to right,rgba(31, 2, 31, 0.959),rgb(151, 147, 147),rgba(31, 2, 31, 0.959));">
+    <h2 class=" titulo-2 d-flex justify-content-center">Contáctanos</h2>
+    <div class="row">
+      <div class="nat-img col-lg-4 col-md-6 col-sm-12">
+        <img src="../img/contact.jpg" class="rounded-circle" alt="Imagen contacto Halo Boreal" width="100%" height="auto" style="border-style:double;opacity: 0.9;margin-top:15px;">
+      </div>
+      <div class="col-lg-8 col-md-6 col-sm-12 d-flex align-items-center">
+        <div class="col-lg-12">
+          <div class="container-fluid">
+            <!--Formulario Contacto-->
+            <div class="row">
+              <div class="col-lg-12">
+                <div class="well well-sm">
+                  <form class="form-horizontal" method="post">
+                    <fieldset>
+                      <div class="form-group">
+                        <span class="col-md-1 col-md-offset-2 text-center"><i class="fa fa-user bigicon"></i></span>
+                        <div class="col-md-8">
+                          <input id="fname" name="name" type="text" placeholder="Nombre" class="form-control" required>
+                        </div>
+                      </div>
+                      <div class="form-group">
+                        <span class="col-md-1 col-md-offset-2 text-center"><i class="fa fa-user bigicon"></i></span>
+                        <div class="col-md-8">
+                          <input id="lname" name="name" type="text" placeholder="Apellido" class="form-control">
+                        </div>
+                      </div>
+                      <div class="form-group">
+                        <span class="col-md-1 col-md-offset-2 text-center"><i class="fa fa-envelope-o bigicon"></i></span>
+                        <div class="col-md-8">
+                          <input id="email" name="email" type="text" placeholder="Email" class="form-control" required>
+                        </div>
+                      </div>
+                      <div class="form-group">
+                        <span class="col-md-1 col-md-offset-2 text-center"><i class="fa fa-phone-square bigicon"></i></span>
+                        <div class="col-md-8">
+                          <input id="phone" name="phone" type="text" placeholder="Telefono" class="form-control" required>
+                        </div>
+                      </div>
+                      <div class="form-group">
+                        <span class="col-md-1 col-md-offset-2 text-center"><i class="fa fa-pencil-square-o bigicon"></i></span>
+                        <div class="col-md-8">
+                          <textarea class="form-control" id="message" name="Mensaje" placeholder="Escribe tu mensaje aquí." rows="7"></textarea>
+                        </div>
+                      </div>
+                      <div class="form-group">
+                        <div class="col-md-12 text-center d-flex justify-content-center">
+                          <button type="submit" class="btn btn-outline-info btn-lg ">Enviar</button>
+                        </div>
+                      </div>
+                    </fieldset>
+                  </form>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
-      <div style="text-align:center;"><a href="#principio">ir arriba</a></div>
-      <footer class="footer">
-        <nav class="pie">
-          <p>Halo Boreal &copy; Todos los derechos reservados</p>
-          <a target="_blank"  href="http://www.instagram.com/haloBoreal.cl"><i class="fa-brands fa-instagram"></i></a>
-          <a class="correo" href= mailto:natalia19emilia@gmail.com><i class="fa-regular fa-envelope"></i></a>
-          <a href="tel:+56932137306"><i class="fa-brands fa-whatsapp"></i></a>
-        </nav>
-      </footer>
-    </body>
-  </html>
+    </div>
+    <footer class="footer">
+      <nav class="pie">
+        <p>Halo Boreal &copy; Todos los derechos reservados</p>
+        <a target="_blank"  href="http://www.instagram.com/haloBoreal.cl"><i class="fa-brands fa-instagram"></i></a>
+        <a class="correo" href= mailto:natalia19emilia@gmail.com><i class="fa-regular fa-envelope"></i></a>
+        <a href="tel:+56932137306"><i class="fa-brands fa-whatsapp"></i></a>
+      </nav>
+    </footer>
+  </div>
+</body>
+</html>
